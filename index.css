@@ -1,0 +1,434 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+/* NavBar */
+header {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+header a {
+    text-decoration: none;
+}
+#brand {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+nav ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 200px;
+}
+.nav-bar ul a {  
+    text-transform: uppercase;
+    color: rgb(158, 158, 158);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.nav-bar ul li {
+    list-style: none;
+    padding: 5px;
+    margin-left: 10px;
+    color: inherit;
+}
+.nav-bar ul li a:hover {
+    transition: 0.3s;
+    color: black;
+}
+.nav-item-button-container a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.nav-item-button {
+    background-color: white;
+    border: 2px solid rgb(41, 41, 41);
+}
+.nav-item-button a {
+    color: rgb(99, 99, 99);
+}
+.nav-item-button:hover {
+    background-color: rgb(41, 41, 41);
+    color: rgb(255, 255, 255);
+}
+.nav-item-button-container a:hover {
+    color: white!important;
+}
+.mobile-menu {
+    display: none;
+}
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: hsl(270, 9%, 17%);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+    opacity: 0;
+}
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: hsl(270, 9%, 17%);
+    cursor: default;
+}
+.mobile-menu li {
+    margin-top: 30px;
+}
+.mobile-menu li a{
+    color: white;
+    text-decoration: none;
+}
+.mobile-menu li a:hover{
+    color: rgb(158, 158, 158)!important;
+}
+.mobile-nav-item-button {
+    background-color: hsl(270, 9%, 17%);
+    border: 2px solid white;
+    padding: 15px 70px 15px 70px;
+}
+.mobile-nav-item-button:hover {
+    border: 2px solid rgb(158, 158, 158);
+    transition: 0.3s;
+    color: rgb(158, 158, 158);
+}
+.mobile-nav-item-button a:hover {
+    color: rgb(158, 158, 158)!important;
+}
+
+@media only screen and (max-width: 1250px) {
+    header nav {
+      display: none;
+    }
+    #hamburger-icon {
+      display: block;
+    }
+    #brand {
+        margin-left: 20px;
+    }
+}
+
+/* HEADER */
+.header {
+    padding-top: 80px;
+    height: 680px;
+    background-color: hsl(256, 26%, 20%);
+    font-family: 'DM Serif Display', serif;
+}
+.bg1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: auto;
+}
+.bg2 {
+    position: absolute;
+    top: 510px;
+    left: 0;
+    z-index: auto;
+}
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header-image {
+    margin-top: 100px;
+}
+.header-text {
+    max-width: 700px;
+    margin-top: 100px;
+    justify-content: center;
+    z-index: 1;
+}
+.header-title {
+    font-size: 80px;
+    color: white;
+}
+.header-description {
+    color: white;
+}
+.header-text .hr {
+    border-top: 1px solid white;
+    width: 200px;
+    padding-bottom: 70px;
+}
+.header-text h1 {
+    letter-spacing: -2px;
+    font-weight: bold;
+}
+.header-button-container {
+    margin-top: 30px;
+}
+.header-button-container a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.header-button {
+    background-color: hsl(256, 26%, 20%);
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 10px 35px 10px 35px;
+}
+.header-button:hover {
+    color: hsl(256, 26%, 20%);
+    background-color: white;
+    transition: 0.3s;
+}
+/* SECTION 2 */
+.section2 .container {
+    margin-top: 370px;
+}
+.section2 .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section2-content .hr1 {
+    border-top: 1px solid hsl(256, 26%, 20%);
+    width: 200px;
+    padding-bottom: 70px;
+}
+.section2-title h1 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 80px;
+}
+.icon {
+    margin-bottom: 40px;
+}
+.title h3 {
+    font-weight: 700;
+}
+.description p {
+    color: hsl(0, 0%, 52%);
+    font-weight: 400;
+}
+
+/* Section - About Us */
+.section3 {
+    position: relative;
+    margin: auto;
+    width: 65%;
+    background-color: hsl(256, 26%, 20%);
+    margin-top: 150px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    z-index: 1;
+}
+.section3 .bg3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: auto;
+    z-index: -1;
+}
+.about-us-title {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.about-us-title h2 {
+    color: white;
+    font-weight: 700;
+    width: 300px;
+}
+.about-us-button-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.about-us-button-container a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.about-us-button {
+    background-color: hsl(256, 26%, 20%);
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 10px 30px 10px 30px;
+}
+.about-us-button:hover {
+    color: hsl(256, 26%, 20%);
+    background-color: white;
+    transition: 0.3s;
+    font-weight: bold;
+}
+/* FOOTER */
+footer {
+    background-color: hsl(0, 0%, 98%);
+}
+.bg4 {
+    position: absolute;
+    left: 0;
+    z-index: auto;
+}
+footer .container {
+    margin-top: 200px;
+}
+.footer-header {
+    position: relative;
+    height: 100px;
+}
+.footer-logo {
+    position: absolute;
+    float: left;
+    top: 50%;
+}
+.footer-soc-media {
+    position: absolute;
+    float: right;
+    display: flex;
+    top: 50%;
+    right: 0;
+}
+#soc-media-item{
+    padding: 0 10px 0 10px;
+}
+#soc-media-item svg:hover path{
+    fill: black;
+}
+.footer{
+    display: flex;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.footer .col {
+    margin-bottom: 50px;
+}
+.footer p {
+    list-style: none;
+    text-transform: uppercase;
+    color: rgb(158, 158, 158);
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.footer li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.footer li a {
+    color: hsl(270, 9%, 17%);
+    text-decoration: none;
+}
+.footer li a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1256px) {
+    .header {
+        height: 900px;
+    }
+    .header-image {
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .section3 {
+        display: block;
+    }
+    .about-us-title {
+        padding-top: 50px;
+        text-align: center;
+    }
+    .about-us-button-container {
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+/* Main Mobile  */
+@media only screen and (max-width: 800px) {
+    .bg1 {
+        content: url("images/bg-pattern-intro-right-mobile.svg");
+    }
+    .header {
+        height: 900px;
+    }
+    .header-image {
+        content:url("images/image-intro-mobile.jpg");
+        margin-top: 50px;
+    }
+    .header-content {
+        margin-top: 60px;
+    }
+    .header-text {
+        margin: 0 80px 0 80px;
+        text-align: center;
+    }
+    .header-text .hr {
+        display: none;
+    }
+    .header-title {
+        font-size: 60px;   
+    }
+    .section2-content {
+        margin: auto;
+    }
+    .section2 .col {
+        flex: 100%;
+        margin-bottom: 50px;
+    }
+    .icon {
+        margin-bottom: 20px;
+    }
+    .bg3 {
+        content:url("images/bg-pattern-how-we-work-mobile.svg");
+        height: 250px;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+    }
+}
