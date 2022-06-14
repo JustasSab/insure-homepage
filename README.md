@@ -4,5 +4,5 @@
 
 ## Technologies used
 - HTML5
-- CSS
+- CSS3
 - JavaScript
