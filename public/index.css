@@ -390,13 +390,13 @@ footer .container {
 /* Main Mobile  */
 @media only screen and (max-width: 800px) {
     .bg1 {
-        content: url("images/bg-pattern-intro-right-mobile.svg");
+        content: url("/images/bg-pattern-intro-right-mobile.svg");
     }
     .header {
         height: 900px;
     }
     .header-image {
-        content:url("images/image-intro-mobile.jpg");
+        content:url("/images/image-intro-mobile.jpg");
         margin-top: 50px;
     }
     .header-content {
@@ -428,7 +428,7 @@ footer .container {
         margin-bottom: 20px;
     }
     .bg3 {
-        content:url("images/bg-pattern-how-we-work-mobile.svg");
+        content:url("../images/bg-pattern-how-we-work-mobile.svg");
         height: 250px;
     }
     .footer {
